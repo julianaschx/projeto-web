@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- Define o tipo de documento como HTML5 -->
+
+<html lang="pt-BR">
+<!-- Define o idioma do conteúdo da página como Português (Brasil) -->
+
+<head>
+    <!-- Cabeçalho do documento que contém metadados -->
+
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres especiais e acentuação -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para garantir que a página tenha uma boa aparência em todos os dispositivos, especialmente em dispositivos móveis -->
+
+    <title>PrestServ - Página Inicial</title>
+    <!-- Define o título da página que aparece na aba do navegador -->
+
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link para o arquivo de estilos CSS externo, que define o estilo visual da página -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Otimiza a conexão com os servidores de fontes do Google para melhorar o tempo de carregamento -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Importa as fontes "Merriweather" e "Open Sans" do Google Fonts para uso na página -->
+</head>
+
+<body>
+    <!-- Corpo do documento -->
+
+    <header class="header">
+        <!-- Cabeçalho da página que geralmente contém o título e a navegação principal -->
+
+        <h1 class="header__title">PrestServ</h1>
+        <!-- Título principal da página dentro do cabeçalho -->
+
+        <nav class="nav sidebar">
+            <!-- Navegação principal com a classe "sidebar" para estilização e posicionamento -->
+
+            <ul class="nav__list">
+                <!-- Lista de navegação -->
+
+                <li class="nav__item"><a class="nav__link" href="index.html">Página Inicial</a></li>
+                <!-- Item de navegação com link para a página inicial -->
+
+                <li class="nav__item"><a class="nav__link" href="contato.html">Contato</a></li>
+                <!-- Item de navegação com link para a página de contato -->
+
+                <li class="nav__item"><a class="nav__link" href="servicos.html">Serviços</a></li>
+                <!-- Item de navegação com link para a página de serviços -->
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Conteúdo principal da página, onde a maior parte do conteúdo informativo é exibido -->
+
+        <section class="section">
+            <!-- Seção da página para organizar o conteúdo -->
+
+            <h2 class="section__title">Contato</h2>
+            <!-- Título da seção, que indica que o conteúdo a seguir é sobre o contato -->
+
+            <iframe class="main__map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086997540528!2d-122.418415!3d37.774929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064d244e1f7%3A0x5a3fcd2943ecb4d8!2sRua%20Presidente%20Faria%2C%20282!5e0!3m2!1spt-BR!2sbr!4v1620197714496!5m2!1spt-BR!2sbr"
+                allowfullscreen="" loading="lazy"></iframe>
+            <!-- Mapa embutido do Google Maps para mostrar a localização, configurado para carregamento preguiçoso e tela cheia -->
+
+            <div class="social-media">
+                <!-- Div para links de redes sociais -->
+
+                <a class="social-media__link" href="https://instagram.com">
+                    <img class="social-media__icon" src="instagram.png" alt="Instagram">
+                    <!-- Link para a página do Instagram com um ícone representativo -->
+                </a>
+
+                <a class="social-media__link" href="https://facebook.com">
+                    <img class="social-media__icon" src="facebook.png" alt="Facebook">
+                    <!-- Link para a página do Facebook com um ícone representativo -->
+                </a>
+
+                <a class="social-media__link" href="https://youtube.com">
+                    <img class="social-media__icon" src="whats.png" alt="Whatsapp">
+                    <!-- Link para a página do YouTube com um ícone representativo -->
+                </a>
+            </div>
+
+            <!-- Formulário de contato -->
+            <form class="contact-form" action="/submit" method="post">
+                <!-- Formulário para envio de dados ao servidor -->
+
+                <div class="form-group">
+                    <!-- Grupo de campos do formulário -->
+
+                    <label for="name">Nome:</label>
+                    <!-- Rótulo para o campo de nome -->
+                    <input type="text" id="name" name="name" required>
+                    <!-- Campo para o nome do usuário, obrigatório -->
+                </div>
+
+                <div class="form-group">
+                    <!-- Grupo de campos do formulário -->
+
+                    <label for="email">E-mail:</label>
+                    <!-- Rótulo para o campo de e-mail -->
+                    <input type="email" id="email" name="email" required>
+                    <!-- Campo para o e-mail do usuário, obrigatório -->
+                </div>
+
+                <div class="form-group">
+                    <!-- Grupo de campos do formulário -->
+
+                    <label for="message">Mensagem:</label>
+                    <!-- Rótulo para o campo de mensagem -->
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <!-- Campo para a mensagem do usuário, obrigatório -->
+                </div>
+
+                <button type="submit" class="submit-button">Enviar</button>
+                <!-- Botão para enviar o formulário -->
+            </form>
+            <!-- Fim do formulário de contato -->
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Rodapé da página -->
+
+        <div class="container">
+            <!-- Container para organizar o conteúdo do rodapé -->
+
+            <div class="footer__contact">
+                <!-- Div para informações de contato -->
+
+                <p>Endereço: Rua Presidente Faria 282, 2º andar, sala 281 - Curitiba, Paraná</p>
+                <!-- Informações de endereço -->
+                <p>Telefone: (41) 3222-8066 | Email: contato@exemplo.com</p>
+                <!-- Informações de telefone e e-mail -->
+            </div>
+
+            <nav class="footer__nav">
+                <!-- Navegação no rodapé -->
+
+                <ul class="footer__nav-list">
+                    <!-- Lista de navegação do rodapé -->
+
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="index.html">Página Inicial</a></li>
+                    <!-- Item de navegação com link para a página inicial -->
+
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="contato.html">Contato</a></li>
+                    <!-- Item de navegação com link para a página de contato -->
+
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="servicos.html">Serviços</a></li>
+                    <!-- Item de navegação com link para a página de serviços -->
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
